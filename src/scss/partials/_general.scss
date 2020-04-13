@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Gotham-Medium";
+  src: local("Gotham-Medium"),
+      url("../../../assets/fonts/Gotham-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham-Medium", sans-serif;
+}
+
+.clearfix::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#jumbo{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  li{
+    list-style-type: none;
+  }
+}
+
+.black{
+  background-color: black;
+}
+
+.color-white{
+  color: white;
+}
+
+.svg-white{
+  fill: white;
+}
+
+.gray{
+  background-color: lightgray;
+}
+
+.none{
+  display: none;
+}
+
+.loader{
+  animation-name: rotazioneInfinita;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotazioneInfinita{
+  0% {
+    transform: rotate(-360deg);
+  }
+}
